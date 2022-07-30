@@ -23,21 +23,23 @@ Config.MenuItems = {
                 type = 'client',
                 event = 'qb-trunk:client:GetIn',
                 shouldClose = true
-            }, {
-                id = 'cornerselling',
-                title = 'Corner Selling',
-                icon = 'cannabis',
-                type = 'client',
-                event = 'qb-drugs:client:cornerselling',
-                shouldClose = true
-            }, {
-                id = 'togglehotdogsell',
-                title = 'Hotdog Selling',
-                icon = 'hotdog',
-                type = 'client',
-                event = 'qb-hotdogjob:client:ToggleSell',
-                shouldClose = true
-            }, {
+            },
+            -- {
+            --     id = 'cornerselling',
+            --     title = 'Corner Selling',
+            --     icon = 'cannabis',
+            --     type = 'client',
+            --     event = 'qb-drugs:client:cornerselling',
+            --     shouldClose = true
+            -- }, {
+            --     id = 'togglehotdogsell',
+            --     title = 'Hotdog Selling',
+            --     icon = 'hotdog',
+            --     type = 'client',
+            --     event = 'qb-hotdogjob:client:ToggleSell',
+            --     shouldClose = true
+            -- }, 
+            {
                 id = 'interactions',
                 title = 'Interaction',
                 icon = 'triangle-exclamation',
@@ -632,6 +634,14 @@ Config.JobInteractions = {
                     icon = 'user-lock',
                     type = 'client',
                     event = 'police:client:JailPlayer',
+                    shouldClose = true
+                },
+                {
+                    id = 'forcename',
+                    title = 'Force Get Name',
+                    icon = 'fingerprint',
+                    type = 'client',
+                    event = 'police:client:ForceGetPlayerInformation',
                     shouldClose = true
                 }
             }
